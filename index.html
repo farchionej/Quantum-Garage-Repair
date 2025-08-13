@@ -971,6 +971,10 @@
                 display: none;
             }
 
+            .logo img {
+                height: 35px !important;
+            }
+
             .primary-ctas {
                 flex-direction: column;
             }
@@ -1001,6 +1005,23 @@
 
             .sticky-ctas {
                 display: none;
+            }
+
+            .quantum-visual img {
+                height: 300px !important;
+            }
+
+            /* Mobile adjustments for new sections */
+            div[style*="display: grid; grid-template-columns: 1fr 1fr"] {
+                display: block !important;
+            }
+
+            div[style*="display: grid; grid-template-columns: 1fr 1fr"] > div {
+                margin-bottom: 2rem;
+            }
+
+            img[style*="width: 600px"] {
+                width: 100% !important;
             }
         }
 
@@ -1059,7 +1080,9 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
-            <div class="logo">Quantum Garage Repair Co.</div>
+            <div class="logo">
+                <img src="./images/logo-patch.jpg" alt="Quantum Garage Repair Co." style="height: 50px; border-radius: 8px; box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);">
+            </div>
             <ul class="nav-links">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#pricing">Pricing</a></li>
@@ -1215,24 +1238,63 @@
                     </ul>
                 </div>
 
+                <div style="position: relative;">
+                    <img src="./images/service-truck.jpg" alt="Quantum Service Truck" 
+                         style="width: 100%; border-radius: 16px; box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, rgba(0, 212, 255, 0.1), rgba(139, 92, 246, 0.1)); border-radius: 16px;"></div>
+                </div>
+            </div>
+            
+            <h3 style="font-family: 'Orbitron', monospace; color: var(--quantum-blue); margin: 4rem 0 2rem; text-align: center;">How It Works</h3>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Call or Book</h4>
+                    <p>Live person answers 24/7. Schedule same-day or emergency service.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Diagnose & Quote</h4>
+                    <p>Transparent upfront pricing before any work begins.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Fix & Warranty</h4>
+                    <p>Complete repair with 5-year warranty. Job done right first time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quantum Technology Section -->
+    <section style="padding: 6rem 0; background: rgba(0, 212, 255, 0.03);">
+        <div class="container">
+            <h2 class="section-title">QUANTUM TECHNOLOGY</h2>
+            <p class="section-subtitle">Advanced diagnostic systems and precision engineering for superior garage door solutions</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-top: 4rem;">
                 <div>
-                    <h3 style="font-family: 'Orbitron', monospace; color: var(--quantum-blue); margin-bottom: 2rem;">How It Works</h3>
-                    <div class="process-steps">
-                        <div class="step">
-                            <div class="step-number">1</div>
-                            <h4>Call or Book</h4>
-                            <p>Live person answers 24/7. Schedule same-day or emergency service.</p>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">2</div>
-                            <h4>Diagnose & Quote</h4>
-                            <p>Transparent upfront pricing before any work begins.</p>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">3</div>
-                            <h4>Fix & Warranty</h4>
-                            <p>Complete repair with 5-year warranty. Job done right first time.</p>
-                        </div>
+                    <img src="./images/team-holograms.jpg" alt="Quantum Diagnostic Technology" 
+                         style="width: 100%; border-radius: 20px; box-shadow: 0 25px 50px rgba(0, 212, 255, 0.2);">
+                </div>
+                <div>
+                    <h3 style="font-family: 'Rajdhani', sans-serif; font-size: 2rem; color: var(--quantum-blue); margin-bottom: 1.5rem; letter-spacing: 1px; text-transform: uppercase;">ADVANCED DIAGNOSTICS</h3>
+                    <div style="font-family: 'Exo 2', sans-serif; color: #b0b8c7; line-height: 1.7; font-size: 1.1rem;">
+                        <p style="margin-bottom: 1.5rem;">Our quantum diagnostic systems analyze garage door mechanisms at the molecular level, identifying potential issues before they become problems.</p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.5rem 0; position: relative; padding-left: 2rem;">
+                                <span style="position: absolute; left: 0; color: var(--quantum-blue);">⚡</span>
+                                <strong>Precision Analysis:</strong> Advanced sensors detect micro-variations in door balance and alignment
+                            </li>
+                            <li style="padding: 0.5rem 0; position: relative; padding-left: 2rem;">
+                                <span style="position: absolute; left: 0; color: var(--quantum-blue);">⚡</span>
+                                <strong>Predictive Maintenance:</strong> AI-powered systems predict component lifespan and maintenance needs
+                            </li>
+                            <li style="padding: 0.5rem 0; position: relative; padding-left: 2rem;">
+                                <span style="position: absolute; left: 0; color: var(--quantum-blue);">⚡</span>
+                                <strong>Digital Blueprints:</strong> Holographic modeling for optimal repair strategies
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
